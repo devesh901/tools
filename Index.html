@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedTop</title>
+    <link rel="stylesheet" href="css2..css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SpeedTest Pro</h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <main>
+            <div class="speedtest-card">
+                <div class="network-info">
+                    <div class="info-item">
+                        <span class="info-label">IP Address</span>
+                        <span id="ip-address" class="info-value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">ISP</span>
+                        <span id="isp" class="info-value">-</span>
+                    </div>
+                </div>
+
+                <div class="test-container">
+                    <div class="test-button-container">
+                        <button id="start-test" class="btn-primary">
+                            <span>Start Test</span>
+                        </button>
+                    </div>
+
+                    <div class="progress-container hidden">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">Testing...</div>
+                    </div>
+
+                    <div class="results-container">
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="result-details">
+                                <div class="result-label">Download</div>
+                                <div id="download-speed" class="result-value">- Mbps</div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <div class="result-details">
+                                <div class="result-label">Upload</div>
+                                <div id="upload-speed" class="result-value">- Mbps</div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="result-details">
+                                <div class="result-label">Ping</div>
+                                <div id="ping" class="result-value">- ms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 SpeedTop </p>
+        </footer>
+    </div>
+
+    <script src="h.js"></script>
+</body>
+</html>
